@@ -1,0 +1,10 @@
+package com.justbinary.service;
+
+import com.justbinary.dto.TradeRequest;
+
+public interface TradeService {
+    String placeTrade(String email, TradeRequest request);
+    String getTradeHistory(String email);
+    String getActiveTrades(String email);
+    String getTradeById(String email, String tradeId); // ← String not Long
+}
